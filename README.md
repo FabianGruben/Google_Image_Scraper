@@ -2,7 +2,7 @@
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/69685614/157089599-e508baad-1fa4-4b5a-b7bc-14bcb385badf.gif)
 
-Google_Image_Scraper is a dynamic Webscraper that scrapes the images behind Google Image search results.
+Google_Image_Scraper is a dynamic Webscraper that scrapes the images behind Google Image search results (so far it's hardcoded for kitten pictures).
 It uses SeleniumWebDriver and ChromeDriver to remotely control the Chromium browser. 
 
 ChromeDriver is a standalone server that implements the W3C WebDriver standard: https://chromedriver.chromium.org/
