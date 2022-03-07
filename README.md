@@ -32,7 +32,7 @@ Selenium offers docker images for deploying Selenium test suites on Selenium Gri
 ## Features / Learnings
 
 - Logger
-- Programmed using some OOP principles (Factory Pattern)
+- Programmed using some OOP principles (Factory Pattern, Composition)
 - Exception Handling for dealing with errors that are common in interacting with Websites and useful for signaling within the control flow
 - Created some custom exception classes for dealing with webscraping problems
 - Created some custom expected conditions for Selenium Webdriver
