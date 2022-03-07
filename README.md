@@ -21,11 +21,25 @@ Selenium offers docker images for deploying Selenium test suites on Selenium Gri
 
 1. Installation of docker-compose: https://docs.docker.com/compose/install/
 
-2. Clone the repository into ./Google_Image_Scraper: `git clone https://github.com/FabianGruben/Google_Image_Scraper/Google_Image_Scraper/`
+2. Clone the repository into ./Google_Image_Scraper: `git clone https://github.com/FabianGruben/Google_Image_Scraper/`
 
-3. Start up the docker-compose pipeline in the background: `docker-compose up -d`
+3. Start up the docker-compose pipeline in the background (after changing directory): `docker-compose up -d`
 
 4. Access the program container using bash: `docker exec -ti google_scraper /bin/bash`
 
 5. Start the script and download a lot of kitten pictures from Google Image Search: `python3 selenium_scraper.py`
+
+## Features / Learnings
+
+- Logger
+- Programmed using some OOP principles (Factory Pattern)
+- Exception Handling for dealing with errors that are common in interacting with Websites and useful for signaling within the control flow
+- Created some custom exception classes for dealing with webscraping problems
+- Created some custom expected conditions for Selenium Webdriver
+
+## Next Steps
+
+- Allowing arguments from the command line for number of images and search terms
+- Refactoring
+- Implement tests for download success
 
