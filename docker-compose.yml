@@ -1,0 +1,25 @@
+version: '3.8'
+
+
+
+services:
+    selenium_standalone_chrome:
+        image: selenium/standalone-chrome:latest
+        container_name: selenium_standalone_chrome
+        hostname: selenium_standalone_chrome
+        shm_size: 2g
+        ports:
+          - 4444:4444
+
+    google_scraper:
+        build:
+          context: ./google_scraper/
+          dockerfile: Dockerfile
+        container_name: google_scraper
+        depends_on:
+          - selenium_standalone_chrome
+        tty: true
+        stdin_open: true
+        volumes:
+          - ./google_scraper:/app
+
