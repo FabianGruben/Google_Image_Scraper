@@ -1,9 +1,9 @@
-# google_image_scraper - in development
+# Google_Image_Scraper
+
+
 
 A dynamic Webscraper that scrapes the images behind Google Image search results.
 It uses SeleniumWebDriver and ChromeDriver to remotely control the Chrome browser.
-
-
 
 
 Selenium is a python package used to automate web browser interaction.
